@@ -15,7 +15,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        self.number_of_instances += number_of_instances 
+        self.number_of_instances += number_of_instances
         self.print_symbol = print_symbol
 
     def __str__(self):
