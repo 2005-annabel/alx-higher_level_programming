@@ -6,7 +6,7 @@
 
 class LockedClass:
     """
-    the class prevents any user from instantiating  any new LockedClass attribute other than 'first_name'.
+    the class prevents any user from instantiating any new LockedClass attribute other than 'first_name'.
     """
 
     __slots__ = ["first_name"]
