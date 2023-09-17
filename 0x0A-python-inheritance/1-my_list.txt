@@ -1,6 +1,5 @@
 """ print sorted list """
 
-
 """ Importing the function from the module """
 >>> MyList = __import__("1-my_list").MyList
 
