@@ -34,12 +34,12 @@ class TestRectangleMethods(unittest.TestCase):
 
         """ the test docstring tests  if a docstring is present """
 
-        self.assertIsNotNone(Rectangle.__doc__)    
+        self.assertIsNotNone(Rectangle.__doc__)
 
     def tear_Down(self):
 
         """ this particular test cleans up after each test """
-        pass    
+        pass
 
     def test_for_class_inheritance(self):
 
