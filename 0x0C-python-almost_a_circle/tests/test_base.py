@@ -22,11 +22,11 @@ class TestBaseMethod(unittest.TestCase):
 
     def test_tear_down(self):
         """ this ceans up after each test """
-        pass   
+        pass
 
     def test_docstring(self):
         """ this test is of the docstring  present """
-        self.assertIsNotNone(Base.__doc__) 
+        self.assertIsNotNone(Base.__doc__)
 
     def test_for_random_id(self):
 
@@ -55,7 +55,7 @@ class TestBaseMethod(unittest.TestCase):
         self.assertEqual(b1.id, 1)
         self.assertEqual(b2.id, 2)
         self.assertEqual(b3.id, 3)
-        self.assertEqual(b4.id, 24)    
+        self.assertEqual(b4.id, 24)
 
 
     def test_for_consecutive_ids(self):
@@ -63,7 +63,7 @@ class TestBaseMethod(unittest.TestCase):
         """ this is the test for consecutive ids """
         b1 = Base()
         b2 = Base()
-        self.assertEqual(b1.id + 1, b2.id)    
+        self.assertEqual(b1.id + 1, b2.id)
 
     def test_constructor(self):
 
@@ -75,7 +75,7 @@ class TestBaseMethod(unittest.TestCase):
 
         msg = "__init__() missing 1 required positional argument: 'self'"
 
-        self.assertEqual(str(e.exception), msg)    
+        self.assertEqual(str(e.exception), msg)
 
     def test_constructor_args_2(self):
 
@@ -87,7 +87,7 @@ class TestBaseMethod(unittest.TestCase):
 
         msg = "__init__() takes from 1 to 2 positional arguments but 3 \
                 were given"
-        self.assertEqual(str(e.exception), msg)   
+        self.assertEqual(str(e.exception), msg)
 
 
     def test_to_json_string(self):
