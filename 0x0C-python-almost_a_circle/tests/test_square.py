@@ -70,7 +70,6 @@ class TestSquareMethod(unittest.TestCase):
 
             print(Square(2, 10, 5, 12).__size)
 
-
     def test_for_size_getter(self):
         """ test for size of the getter """
 
