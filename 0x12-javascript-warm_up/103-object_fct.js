@@ -1,9 +1,16 @@
 #!/usr/bin/node
-const inc = (number) => {
-  return number + 1;
+const myObject = {
+  type: 'object',
+  value: 12
 };
-const incrementAndCall = (number, theFunction) => {
-  const incrementedNumber = inc(number);
-  theFunction(incrementedNumber);
+console.log(myObject);
+
+myObject.incr = function () {
+  myObject.value++;
 };
-module.exports = { incrementAndCall, inc };
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
